@@ -1,0 +1,24 @@
+{
+	"name": "小敏插件",  
+    "version": "1.0",  
+    "manifest_version": 2,  
+    "icons":   
+    {  
+        "128": "icon.png"  
+    },  
+    "permissions": ["tabs", "http://www.theguardian.com/*"],  
+    "description":"广告过滤，屏幕适配，扇贝查词",  
+    "browser_action":   
+    {  
+        "default_icon": "icon.png",  
+        "default_popup": "popup.html"  
+    },
+
+    "content_scripts": [
+    	{
+    		"matches": ["http://www.theguardian.com/*"],
+    		"js": ["content_script/content.js"]
+
+    	}
+    ]
+}
