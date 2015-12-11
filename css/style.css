@@ -1,0 +1,10 @@
+div.fc-container,
+.content-footer,
+div.l-footer, 
+.u-underline,
+.content__meta-container{
+	display: none;
+}
+aside.element-rich-link{
+display: none;
+}

@@ -6,19 +6,22 @@
     {  
         "128": "icon.png"  
     },  
-    "permissions": ["tabs", "http://www.theguardian.com/*"],  
+    "permissions": ["tabs", "http://*/*", "https://*/*"],  
     "description":"广告过滤，屏幕适配，扇贝查词",  
-    "browser_action":   
+    "browser_action": 
     {  
-        "default_icon": "icon.png",  
-        "default_popup": "popup.html"  
+        "default_icon": "icon.png"
+       
     },
+    "background": 
+    {
+    	"page": "background.html"
+    }
+    // "content_scripts": [
+    // 	{
+    // 		"matches": ["http://www.theguardian.com/*"],
+    // 		"js": ["content_script/content.js"]
 
-    "content_scripts": [
-    	{
-    		"matches": ["http://www.theguardian.com/*"],
-    		"js": ["content_script/content.js"]
-
-    	}
-    ]
+    // 	}
+    // ]
 }
